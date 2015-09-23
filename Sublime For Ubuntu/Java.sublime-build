@@ -1,0 +1,6 @@
+{
+    "cmd": ["gnome-terminal", "-x", "bash", "-c", "javac '${file}' && cd '${file_path}'; java '${file_base_name}';read -n1 -p 'press any key to continue.'"],
+    "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+    "working_dir": "${file_path}",
+    "selector": "source.java",
+}
